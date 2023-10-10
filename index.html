@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Breastfeeding Timer</title>
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <span id="popup-message">Your notification message goes here.</span>
+        <button id="close-popup">Close</button>
+    </div>
+    <div class="container">
+      <h1>Breastfeeding Timer</h1>
+      
+      <div class="timer">
+        <p>Timer: <span id="timer">00:00</span></p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+      <div class="side">
+        <p>Last Side: <span id="lastSide">Not recorded</span></p>
+        <button id="left">Left</button>
+        <button id="both">Both</button>
+        <button id="right">Right</button>
+      </div>
+      <div class="settings">
+        <label for="reminder">Set Reminder:</label>
+        <input type="time" id="reminder" />
+        <button id="setReminder">Set</button>
+      </div>
+      <div class="notification">
+        <p id="notificationText"></p>
+      </div>
+      <button id="showHistory">Show Feeding History</button>
+
+    
+    </div>
+    <div class="history" style="display: none">
+      <h2>Feeding History</h2>
+      <ul id="historyList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
